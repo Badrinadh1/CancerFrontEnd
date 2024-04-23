@@ -1,2 +1,41 @@
-<h1>Hello</h1>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col text-center">
+      <h2 style="font-family: 'Roboto', sans-serif;">Cancer Data Analysis</h2>
+    </div>
+  </div>
+  <div class="row" style="padding-top: 100px;">
+    <div class="col-md-9">
+      <p-card>
+        <ng-template pTemplate="header">
+          <h3 class="text-center">Choose a matrix type</h3>
+        </ng-template>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p-button label="Deaths per year"></p-button>
+            </div>
+            <div class="col">
+              <p-button label="Deaths per month"></p-button>
+            </div>
+            <div class="col">
+              <p-button label="Deaths per type of Cancer"></p-button>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              <p-button label="Deaths per age group"></p-button>
+            </div>
+            <div class="col">
+              <p-button label="Deaths for Smoking"></p-button>
+            </div>
+            <div class="col">
+              <p-button label="Deaths for drinking"></p-button>
+            </div>
+          </div>
+        </div>
+      </p-card>
+    </div>
+  </div>
+</div>
 <router-outlet></router-outlet>

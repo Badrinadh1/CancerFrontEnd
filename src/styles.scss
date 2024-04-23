@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  background-image: url('assets/image.png'); /* Adjust the path based on your folder structure */
+  background-size: cover; /* This will make the image cover the entire background */
+  /* Add more styles as needed */
+  // background-position: center; /* Center the image */
+  // background-repeat: no-repeat; /* Do not repeat the image */
+  background-color: rgb(250, 228, 200);
+}
+
+
+.p-card {
+  background: #fff6f6 !important;
+}
+.p-inputtext {
+  width: 100% !important;
+}
+.p-button{
+  width:  100% !important;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  background: #161616 !important;
+  color: white !important;
+}
+
+.p-dropdown{
+  width: 100% !important;
+}
+
+
