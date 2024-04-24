@@ -6,10 +6,45 @@ import { Injectable } from '@angular/core';
 })
 export class GlobalserviceService {
 
+  baseapi:string="https://cancerapi.azurewebsites.net"
+
   constructor(private http:HttpClient) { }
 
-  test()
+  getOptions()
   {
-    return this.http.get("https://cancerapi.azurewebsites.net/deathsperyear/2015")
+    return this.http.get(this.baseapi+"/uniqueyearstate")
+  }
+
+  getDeathsperYearData(year:number)
+  {
+    return this.http.get(this.baseapi+"/deathsperyear/"+year);
+  }
+
+  getDeathsperMonthData(year:number,state:string)
+  {
+    return this.http.get(this.baseapi+"/deathspermoth/"+year+"/"+state);
+  }
+
+  getDeathsperCancer(year:number,state:string)
+  {
+    return this.http.get(this.baseapi+"/deathsfortypeofcancers/"+year+"/"+state);
+  }
+
+  getDeathsperAgeGroup(year:number,state:string)
+  {
+    return this.http.get(this.baseapi+"/deathforagegroup/"+year+"/"+state);
+
+  }
+
+  getDeathsforsmoking(year:number,state:string)
+  {
+    return this.http.get(this.baseapi+"/deathsforsmoking/"+year+"/"+state);
+
+  }
+
+  getDeathsfordrinking(year:number,state:string)
+  {
+    return this.http.get(this.baseapi+"/deathsfordrinking/"+year+"/"+state);
+
   }
 }

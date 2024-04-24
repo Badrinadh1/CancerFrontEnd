@@ -12,13 +12,6 @@ export class AppComponent implements OnInit{
 
   }
   ngOnInit(){
-    this.test();
   }
 
-  test()
-  {
-    this.globalservice.test().subscribe((response:any)=>{
-      console.log(response)
-    })
-  }
 }

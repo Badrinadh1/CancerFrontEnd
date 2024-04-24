@@ -10,10 +10,26 @@ import { GlobalserviceService } from './globalservice.service';
 import {InputTextModule} from 'primeng/inputtext';
 import {CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
+import { DeathsperyearComponent } from './deathsperyear/deathsperyear.component';
+import { HomeComponent } from './home/home.component';
+import { DeathspermonthComponent } from './deathspermonth/deathspermonth.component';
+import { DeathspercancerComponent } from './deathspercancer/deathspercancer.component';
+import { DeathsperagegroupComponent } from './deathsperagegroup/deathsperagegroup.component';
+import { DeathspersmokingComponent } from './deathspersmoking/deathspersmoking.component';
+import { DeathsperdrinkingComponent } from './deathsperdrinking/deathsperdrinking.component';
+import {TableModule} from 'primeng/table';
+import {DropdownModule} from 'primeng/dropdown';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DeathsperyearComponent,
+    HomeComponent,
+    DeathspermonthComponent,
+    DeathspercancerComponent,
+    DeathsperagegroupComponent,
+    DeathspersmokingComponent,
+    DeathsperdrinkingComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +39,9 @@ import {ButtonModule} from 'primeng/button';
     HttpClientModule,
     InputTextModule,
     CardModule,
-    ButtonModule
+    ButtonModule,
+    TableModule,
+    DropdownModule
   ],
   providers: [GlobalserviceService],
   bootstrap: [AppComponent]
