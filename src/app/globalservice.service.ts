@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class GlobalserviceService {
 
-  baseapi:string="https://cancerapi.azurewebsites.net"
+  baseapi:string="https://cancerapi2.azurewebsites.net"
 
   constructor(private http:HttpClient) { }
 
